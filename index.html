@@ -1,13 +1,25 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt">
 	<head>
-		<title>Calculadora</title>
-
+		<meta charset="utf-8">
+    <title>Calculadora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+      .bodypage {
+        background-color: #D9D9D9;
+      }
+      .mt-60 {
+         margin-top: -60px;
+      }
+
+    </style>
 	</head>
 
-  <body style="background: #D9D9D9">
+  <body class="bodypage">
 
     <div class="container">
       <div class="row">
@@ -44,7 +56,7 @@
               <button type="button" class="btn btn-dark btn-lg enter" id="igual" onclick="resultado()" >=</button>
             </div>
 
-            <div class="row" style="margin-top: -60px">
+            <div class="row mt-60">
               <button type="button" class="btn btn-dark zero btn-lg font-weight-light" id="0" onclick="valor()" >0</button>
               <button type="button" class="btn btn-dark btn-lg font-weight-light" id="ponto" onclick="valor()" >.</button>
             </div>
